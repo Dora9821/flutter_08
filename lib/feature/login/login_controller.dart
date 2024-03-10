@@ -5,8 +5,12 @@ import 'package:get/get_state_manager/get_state_manager.dart';
 class LoginController extends GetxController {
   final TextEditingController user1 = TextEditingController();
   final TextEditingController user2 = TextEditingController();
-
+  final showPassword = false.obs;
   final formKey = GlobalKey<FormState>();
+
+  void showHidePassword() {
+    showPassword.value = !showPassword.value;
+  }
 
   void onChangeUserName(username) {
     formKey.currentState?.validate();
