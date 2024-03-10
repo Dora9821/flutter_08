@@ -1,3 +1,4 @@
+import 'package:flutter_08/feature/login/login_binding.dart';
 import 'package:flutter_08/feature/login/login_view.dart';
 import 'package:flutter_08/home/home_view.dart';
 import 'package:flutter_08/signup.dart';
@@ -9,6 +10,7 @@ class AppRouter {
     GetPage(
       name: AppRouterNamed.login,
       page: () => LoginPage(title: ''),
+      binding: LoginBinding(),
     ),
     //SignUp
     GetPage(

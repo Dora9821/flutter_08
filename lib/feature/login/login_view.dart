@@ -3,15 +3,13 @@ import 'package:flutter_08/feature/login/login_controller.dart';
 import 'package:flutter_08/home/home_arguments.dart';
 import 'package:flutter_08/router/router.dart';
 import 'package:get/get.dart';
-import 'package:get/instance_manager.dart';
-import 'package:get/route_manager.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key, required this.title});
   final String title;
 
   Widget build(BuildContext context) {
-    final controller = Get.put(LoginController());
+    final controller = Get.find<LoginController>();
 
     return Scaffold(
       appBar: AppBar(

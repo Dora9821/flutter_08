@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_08/feature/login/counter/counter_controller.dart';
+import 'package:flutter_08/feature/counter/counter_controller.dart';
 import 'package:get/instance_manager.dart';
 import 'package:get/state_manager.dart';
 
